@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/composer_rl_composer_root"
+    >
+
+    <com.example.inkp.timesnap.crop.CropImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/composer_cv_crop_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/composer_bt_crop_button"
+        android:text="crop"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/composer_ln_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/composer_tv_info"
+        android:text="Select video to make Cinemagraph"
+        android:textSize="20dp"
+        android:layout_above="@id/composer_bt_select_video"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Select Video"
+        android:layout_centerInParent="true"
+        android:id="@+id/composer_bt_select_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
